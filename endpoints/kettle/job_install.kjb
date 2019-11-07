@@ -222,7 +222,7 @@
       <name>Table pentaho_ce_audit exists&#x3f;</name>
       <description/>
       <type>TABLE_EXISTS</type>
-      <tablename>&#x22;PENTAHO_CE_AUDIT&#x22;</tablename>
+      <tablename>PENTAHO_CE_AUDIT</tablename>
       <schemaname/>
       <connection>Hibernate</connection>
       <parallel>N</parallel>
@@ -290,7 +290,7 @@
       <name>Table pentaho_ce_audit_metadata</name>
       <description/>
       <type>TABLE_EXISTS</type>
-      <tablename>&#x22;PENTAHO_CE_AUDIT_METADATA&#x22;</tablename>
+      <tablename>PENTAHO_CE_AUDIT_METADATA</tablename>
       <schemaname/>
       <connection>Hibernate</connection>
       <parallel>N</parallel>
@@ -336,7 +336,7 @@
       <name>Drop table pentaho_ce_audit</name>
       <description/>
       <type>SQL</type>
-      <sql>DROP TABLE &#x22;PENTAHO_CE_AUDIT&#x22;&#x3b;</sql>
+      <sql>DROP TABLE PENTAHO_CE_AUDIT&#x3b;</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>
@@ -352,7 +352,7 @@
       <name>Drop table metadata</name>
       <description/>
       <type>SQL</type>
-      <sql>DROP TABLE &#x22;PENTAHO_CE_AUDIT_METADATA&#x22;&#x3b;</sql>
+      <sql>DROP TABLE PENTAHO_CE_AUDIT_METADATA&#x3b;</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>

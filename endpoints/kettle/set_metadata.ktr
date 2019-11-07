@@ -196,7 +196,7 @@
            </partitioning>
     <connection>Hibernate</connection>
     <schema/>
-    <table>&#x22;PENTAHO_CE_AUDIT_METADATA&#x22;</table>
+    <table>PENTAHO_CE_AUDIT_METADATA</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
@@ -213,15 +213,15 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>&#x22;NUMBER_ROWS&#x22;</column_name>
+          <column_name>NUMBER_ROWS</column_name>
           <stream_name>NUMBER_ROWS</stream_name>
         </field>
         <field>
-          <column_name>&#x22;LAST_UPDATE&#x22;</column_name>
+          <column_name>LAST_UPDATE</column_name>
           <stream_name>LAST_UPDATE</stream_name>
         </field>
         <field>
-          <column_name>&#x22;USER&#x22;</column_name>
+          <column_name>USER</column_name>
           <stream_name>PENTAHO_USER</stream_name>
         </field>
     </fields>
@@ -292,7 +292,7 @@
            <schema_name/>
            </partitioning>
     <connection>Hibernate</connection>
-    <sql>SELECT &#xd;&#xa;	&#x22;DATA&#x22;&#xd;&#xa;	, &#x28;select count&#x28;&#x2a;&#x29;  FROM &#x22;PENTAHO_CE_AUDIT&#x22;&#x29; as NUMBER_ROWS&#xd;&#xa;FROM &#x22;PENTAHO_CE_AUDIT&#x22;&#xd;&#xa;ORDER BY &#x22;DATA&#x22; DESC&#xd;&#xa;LIMIT 1</sql>
+    <sql>SELECT &#xd;&#xa;	DATA&#xd;&#xa;	, &#x28;select count&#x28;&#x2a;&#x29;  FROM PENTAHO_CE_AUDIT&#x29; as NUMBER_ROWS&#xd;&#xa;FROM PENTAHO_CE_AUDIT&#xd;&#xa;ORDER BY DATA DESC&#xd;&#xa;LIMIT 1</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -322,7 +322,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DELETE FROM &#x22;PENTAHO_CE_AUDIT_METADATA&#x22;</sql>
+    <sql>DELETE FROM PENTAHO_CE_AUDIT_METADATA</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>

@@ -1752,7 +1752,7 @@
            <schema_name/>
            </partitioning>
     <connection>Hibernate</connection>
-    <sql>SELECT INST_ID as &#x22;inst_id&#x22; FROM pro_audit&#xd;&#xa;WHERE &#xd;&#xa;	MESSAGE_TYPE &#x3d; &#x27;session_start&#x27;&#xd;&#xa;	AND OBJ_TYPE&#x3d;&#x27;org.pentaho.platform.web.http.session.PentahoHttpSession&#x27;&#xd;&#xa;GROUP BY INST_ID</sql>
+    <sql>SELECT INST_ID as inst_id FROM pro_audit&#xd;&#xa;WHERE &#xd;&#xa;	MESSAGE_TYPE &#x3d; &#x27;session_start&#x27;&#xd;&#xa;	AND OBJ_TYPE&#x3d;&#x27;org.pentaho.platform.web.http.session.PentahoHttpSession&#x27;&#xd;&#xa;GROUP BY INST_ID</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1778,7 +1778,7 @@
            <schema_name/>
            </partitioning>
     <connection>Hibernate</connection>
-    <sql>SELECT INST_ID as &#x22;inst_id&#x22;, MESSAGE_NAME as &#x22;message_name&#x22; &#xd;&#xa;FROM pro_audit&#xd;&#xa;WHERE MESSAGE_TYPE &#x3d; &#x27;instance_start&#x27;&#xd;&#xa;GROUP BY INST_ID, MESSAGE_NAME</sql>
+    <sql>SELECT INST_ID as inst_id, MESSAGE_NAME as message_name &#xd;&#xa;FROM pro_audit&#xd;&#xa;WHERE MESSAGE_TYPE &#x3d; &#x27;instance_start&#x27;&#xd;&#xa;GROUP BY INST_ID, MESSAGE_NAME</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
@@ -1805,7 +1805,7 @@
            </partitioning>
     <connection>Hibernate</connection>
     <schema/>
-    <table>&#x22;PENTAHO_CE_AUDIT&#x22;</table>
+    <table>PENTAHO_CE_AUDIT</table>
     <commit>1000</commit>
     <truncate>N</truncate>
     <ignore_errors>N</ignore_errors>
@@ -1822,83 +1822,83 @@
     <return_field/>
     <fields>
         <field>
-          <column_name>&#x22;DATA&#x22;</column_name>
+          <column_name>DATA</column_name>
           <stream_name>data</stream_name>
         </field>
         <field>
-          <column_name>&#x22;PLUGIN&#x22;</column_name>
+          <column_name>PLUGIN</column_name>
           <stream_name>plugin</stream_name>
         </field>
         <field>
-          <column_name>&#x22;USER&#x22;</column_name>
+          <column_name>USER</column_name>
           <stream_name>user</stream_name>
         </field>
         <field>
-          <column_name>&#x22;DIRECTORY&#x22;</column_name>
+          <column_name>DIRECTORY</column_name>
           <stream_name>directory</stream_name>
         </field>
         <field>
-          <column_name>&#x22;DURATION&#x22;</column_name>
+          <column_name>DURATION</column_name>
           <stream_name>duration</stream_name>
         </field>
         <field>
-          <column_name>&#x22;TYPE&#x22;</column_name>
+          <column_name>TYPE</column_name>
           <stream_name>type</stream_name>
         </field>
         <field>
-          <column_name>&#x22;ROLE&#x22;</column_name>
+          <column_name>ROLE</column_name>
           <stream_name>role</stream_name>
         </field>
         <field>
-          <column_name>&#x22;YEAR&#x22;</column_name>
+          <column_name>YEAR</column_name>
           <stream_name>year</stream_name>
         </field>
         <field>
-          <column_name>&#x22;MONTH&#x22;</column_name>
+          <column_name>MONTH</column_name>
           <stream_name>month</stream_name>
         </field>
         <field>
-          <column_name>&#x22;DAY&#x22;</column_name>
+          <column_name>DAY</column_name>
           <stream_name>day</stream_name>
         </field>
         <field>
-          <column_name>&#x22;DAY_WEEK&#x22;</column_name>
+          <column_name>DAY_WEEK</column_name>
           <stream_name>day_week</stream_name>
         </field>
         <field>
-          <column_name>&#x22;AM_PM&#x22;</column_name>
+          <column_name>AM_PM</column_name>
           <stream_name>AM_PM</stream_name>
         </field>
         <field>
-          <column_name>&#x22;HOURS24&#x22;</column_name>
+          <column_name>HOURS24</column_name>
           <stream_name>HOURS24</stream_name>
         </field>
         <field>
-          <column_name>&#x22;HOURS12&#x22;</column_name>
+          <column_name>HOURS12</column_name>
           <stream_name>HOURS12</stream_name>
         </field>
         <field>
-          <column_name>&#x22;MINUTES&#x22;</column_name>
+          <column_name>MINUTES</column_name>
           <stream_name>minutes</stream_name>
         </field>
         <field>
-          <column_name>&#x22;SECONDS&#x22;</column_name>
+          <column_name>SECONDS</column_name>
           <stream_name>seconds</stream_name>
         </field>
         <field>
-          <column_name>&#x22;TIME&#x22;</column_name>
+          <column_name>TIME</column_name>
           <stream_name>TIME</stream_name>
         </field>
         <field>
-          <column_name>&#x22;MONTH_DESC&#x22;</column_name>
+          <column_name>MONTH_DESC</column_name>
           <stream_name>month_desc</stream_name>
         </field>
         <field>
-          <column_name>&#x22;DAY_WEEK_DESC&#x22;</column_name>
+          <column_name>DAY_WEEK_DESC</column_name>
           <stream_name>day_week_desc</stream_name>
         </field>
         <field>
-          <column_name>&#x22;FILE&#x22;</column_name>
+          <column_name>FILE</column_name>
           <stream_name>file</stream_name>
         </field>
     </fields>
@@ -1926,7 +1926,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>DELETE FROM &#x22;PENTAHO_CE_AUDIT&#x22;</sql>
+    <sql>DELETE FROM PENTAHO_CE_AUDIT</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>

@@ -132,7 +132,7 @@
            <schema_name/>
            </partitioning>
     <connection>Hibernate</connection>
-    <sql>SELECT &#xd;&#xa;	&#x22;LAST_UPDATE&#x22;,&#xd;&#xa;  	&#x22;NUMBER_ROWS&#x22;,&#xd;&#xa;  	&#x22;USER&#x22; &#xd;&#xa;FROM &#x22;PENTAHO_CE_AUDIT_METADATA&#x22;&#xd;&#xa;&#xd;&#xa;</sql>
+    <sql>SELECT &#xd;&#xa;	LAST_UPDATE,&#xd;&#xa;  	NUMBER_ROWS,&#xd;&#xa;  	USER &#xd;&#xa;FROM PENTAHO_CE_AUDIT_METADATA&#xd;&#xa;&#xd;&#xa;</sql>
     <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>

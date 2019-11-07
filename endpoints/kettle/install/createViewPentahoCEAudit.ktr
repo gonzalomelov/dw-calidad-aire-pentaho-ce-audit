@@ -97,11 +97,11 @@
     </attributes>
   </connection>
   <order>
-  <hop> <from>Execute SQL script</from><to>Table pro_audit created</to><enabled>Y</enabled> </hop>
-  <hop> <from>Execute SQL script</from><to>Abort -  Error create pro_audit table </to><enabled>Y</enabled> </hop>
+  <hop> <from>Execute SQL script</from><to>Table PRO_AUDIT created</to><enabled>Y</enabled> </hop>
+  <hop> <from>Execute SQL script</from><to>Abort -  Error create PRO_AUDIT table </to><enabled>Y</enabled> </hop>
   </order>
   <step>
-    <name>Abort -  Error create pro_audit table </name>
+    <name>Abort -  Error create PRO_AUDIT table </name>
     <type>Abort</type>
     <description/>
     <distribute>Y</distribute>
@@ -112,7 +112,7 @@
            <schema_name/>
            </partitioning>
       <row_threshold>0</row_threshold>
-      <message>Abort -  Error create pro_audit table </message>
+      <message>Abort -  Error create PRO_AUDIT table </message>
       <always_log_rows>Y</always_log_rows>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
@@ -138,7 +138,7 @@
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
     <quoteString>N</quoteString>
-    <sql>CREATE VIEW pentaho_ce_audit AS&#xd;&#xa;    SELECT &#xd;&#xa;	PA.AUDIT_TIME as data, &#xd;&#xa;	PA.JOB_ID as job, &#xd;&#xa;	PA.ACTOR as usuario, &#xd;&#xa;	PA.OBJ_ID as arquivo, &#xd;&#xa;	PA.OBJ_ID as diretorio, &#xd;&#xa;	PA.DURATION as duracao,&#xd;&#xa;	PA.MESSAGE_TYPE as tipo,&#xd;&#xa;	PA.MESSAGE_NAME as msg_name,&#xd;&#xa;	PA.MESSAGE_TEXT_VALUE as msg_value&#xd;&#xa;FROM pro_audit PA&#xd;&#xa;where PA.job_id&#x21;&#x3d;&#x27;Session startup actions&#x27; AND PA.job_id&#x21;&#x3d;&#x27;Global startup actions&#x27;&#x3b;</sql>
+    <sql>CREATE VIEW pentaho_ce_audit AS&#xd;&#xa;    SELECT &#xd;&#xa;	PA.AUDIT_TIME as data, &#xd;&#xa;	PA.JOB_ID as job, &#xd;&#xa;	PA.ACTOR as usuario, &#xd;&#xa;	PA.OBJ_ID as arquivo, &#xd;&#xa;	PA.OBJ_ID as diretorio, &#xd;&#xa;	PA.DURATION as duracao,&#xd;&#xa;	PA.MESSAGE_TYPE as tipo,&#xd;&#xa;	PA.MESSAGE_NAME as msg_name,&#xd;&#xa;	PA.MESSAGE_TEXT_VALUE as msg_value&#xd;&#xa;FROM PRO_AUDIT PA&#xd;&#xa;where PA.job_id&#x21;&#x3d;&#x27;Session startup actions&#x27; AND PA.job_id&#x21;&#x3d;&#x27;Global startup actions&#x27;&#x3b;</sql>
     <set_params>N</set_params>
     <insert_field/>
     <update_field/>
@@ -155,7 +155,7 @@
     </step>
 
   <step>
-    <name>Table pro_audit created</name>
+    <name>Table PRO_AUDIT created</name>
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
@@ -176,7 +176,7 @@
   <step_error_handling>
       <error>
         <source_step>Execute SQL script</source_step>
-        <target_step>Abort -  Error create pro_audit table </target_step>
+        <target_step>Abort -  Error create PRO_AUDIT table </target_step>
         <is_enabled>Y</is_enabled>
         <nr_valuename/>
         <descriptions_valuename/>

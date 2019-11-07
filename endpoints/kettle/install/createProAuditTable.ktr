@@ -508,12 +508,12 @@
     </hop>
     <hop>
       <from>Execute SQL script </from>
-      <to>Abort -  Error create pro_audit table </to>
+      <to>Abort -  Error create PRO_AUDIT table </to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Execute SQL script </from>
-      <to>Table pro_audit created</to>
+      <to>Table PRO_AUDIT created</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -571,7 +571,7 @@
     </GUI>
   </step>
   <step>
-    <name>Abort -  Error create pro_audit table </name>
+    <name>Abort -  Error create PRO_AUDIT table </name>
     <type>Abort</type>
     <description />
     <distribute>Y</distribute>
@@ -582,7 +582,7 @@
       <schema_name />
     </partitioning>
     <row_threshold>0</row_threshold>
-    <message>Abort -  Error create pro_audit table </message>
+    <message>Abort -  Error create PRO_AUDIT table </message>
     <always_log_rows>Y</always_log_rows>
     <abort_with_error>Y</abort_with_error>
     <cluster_schema />
@@ -775,7 +775,7 @@ public void dispose(StepMetaInterface smi, StepDataInterface sdi)
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>//Script here
 
-var sql = 'CREATE TABLE pro_audit( '+
+var sql = 'CREATE TABLE PRO_AUDIT( '+
 	'job_id varchar(256), '+
 	'inst_id varchar(256), '+
 	'obj_id varchar(256), '+
@@ -832,7 +832,7 @@ var sql = 'CREATE TABLE pro_audit( '+
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>//Script here
 
-var sql = 'CREATE TABLE pro_audit( '+
+var sql = 'CREATE TABLE PRO_AUDIT( '+
 	'job_id varchar(256), '+
 	'inst_id varchar(256), '+
 	'obj_id varchar(256), '+
@@ -916,7 +916,7 @@ var sql = 'CREATE TABLE pro_audit( '+
     </GUI>
   </step>
   <step>
-    <name>Table pro_audit created</name>
+    <name>Table PRO_AUDIT created</name>
     <type>Dummy</type>
     <description />
     <distribute>Y</distribute>
@@ -989,7 +989,7 @@ var sql = 'CREATE TABLE pro_audit( '+
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>//Script here
 
-var sql = 'CREATE TABLE pro_audit( '+
+var sql = 'CREATE TABLE PRO_AUDIT( '+
 	'job_id varchar(256), '+
 	'inst_id varchar(256), '+
 	'obj_id varchar(256), '+
@@ -1030,7 +1030,7 @@ var sql = 'CREATE TABLE pro_audit( '+
   <step_error_handling>
     <error>
       <source_step>Execute SQL script </source_step>
-      <target_step>Abort -  Error create pro_audit table </target_step>
+      <target_step>Abort -  Error create PRO_AUDIT table </target_step>
       <is_enabled>Y</is_enabled>
       <nr_valuename />
       <descriptions_valuename />

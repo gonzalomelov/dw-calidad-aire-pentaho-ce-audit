@@ -359,10 +359,10 @@
       <yloc>121</yloc>
     </entry>
     <entry>
-      <name>Table pro_audit exists?</name>
+      <name>Table PRO_AUDIT exists?</name>
       <description />
       <type>TABLE_EXISTS</type>
-      <tablename>pro_audit</tablename>
+      <tablename>PRO_AUDIT</tablename>
       <schemaname />
       <connection>Hibernate</connection>
       <parallel>N</parallel>
@@ -421,7 +421,7 @@
   </entries>
   <hops>
     <hop>
-      <from>Table pro_audit exists?</from>
+      <from>Table PRO_AUDIT exists?</from>
       <to>Table pentaho_ce_audit exists?</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -431,7 +431,7 @@
     </hop>
     <hop>
       <from>START</from>
-      <to>Table pro_audit exists?</to>
+      <to>Table PRO_AUDIT exists?</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -475,7 +475,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Table pro_audit exists?</from>
+      <from>Table PRO_AUDIT exists?</from>
       <to>Abort job</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

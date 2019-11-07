@@ -173,7 +173,7 @@
       <yloc>60</yloc>
       </entry>
     <entry>
-      <name>Table pro_audit exists&#x3f;</name>
+      <name>Table PRO_AUDIT exists&#x3f;</name>
       <description/>
       <type>TABLE_EXISTS</type>
       <tablename>PRO_AUDIT</tablename>
@@ -395,7 +395,7 @@
     </hop>
     <hop>
       <from>Execute replace bean</from>
-      <to>Table pro_audit exists&#x3f;</to>
+      <to>Table PRO_AUDIT exists&#x3f;</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -403,7 +403,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Table pro_audit exists&#x3f;</from>
+      <from>Table PRO_AUDIT exists&#x3f;</from>
       <to>Execute createProAudirTable</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -412,7 +412,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Table pro_audit exists&#x3f;</from>
+      <from>Table PRO_AUDIT exists&#x3f;</from>
       <to>Table pentaho_ce_audit exists&#x3f;</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

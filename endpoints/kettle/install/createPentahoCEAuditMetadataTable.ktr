@@ -976,10 +976,10 @@ var sql = 'CREATE TABLE "PENTAHO_CE_AUDIT_METADATA"( '+
         <jsScript_name>Script 1</jsScript_name>
         <jsScript_script>//Script here
 
-var sql = 'CREATE TABLE "PENTAHO_CE_AUDIT_METADATA"( '+
-'  "LAST_UPDATE"  TIMESTAMP '+
-', "NUMBER_ROWS" INT '+
-', "USER" varchar(256))';
+var sql = 'CREATE TABLE PENTAHO_CE_AUDIT_METADATA( '+
+'  LAST_UPDATE  TIMESTAMP '+
+', NUMBER_ROWS INT '+
+', USER varchar(256))';
 </jsScript_script>
       </jsScript>
     </jsScripts>

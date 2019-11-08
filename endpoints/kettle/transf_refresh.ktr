@@ -3212,7 +3212,7 @@ GROUP BY INST_ID, MESSAGE_NAME</sql>
     <execute_each_row>Y</execute_each_row>
     <single_statement>N</single_statement>
     <replace_variables>N</replace_variables>
-    <quoteString>N</quoteString>
+    <quoteString>Y</quoteString>
     <sql>INSERT INTO PENTAHO_CE_AUDIT (DATA, PLUGIN, USER, DIRECTORY, DURATION, TYPE, ROLE, YEAR, MONTH, DAY, DAY_WEEK, AM_PM, HOURS24, HOURS12, MINUTES, SECONDS, TIME, MONTH_DESC, DAY_WEEK_DESC, FILE)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);</sql>
     <set_params>N</set_params>

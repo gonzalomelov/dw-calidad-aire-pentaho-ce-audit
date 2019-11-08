@@ -3214,7 +3214,7 @@ GROUP BY INST_ID, MESSAGE_NAME</sql>
     <replace_variables>N</replace_variables>
     <quoteString>Y</quoteString>
     <sql>INSERT INTO PENTAHO_CE_AUDIT (DATA, PLUGIN, USER, DIRECTORY, DURATION, TYPE, ROLE, YEAR, MONTH, DAY, DAY_WEEK, AM_PM, HOURS24, HOURS12, MINUTES, SECONDS, TIME, MONTH_DESC, DAY_WEEK_DESC, FILE)
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);</sql>
+VALUES ('?', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);</sql>
     <set_params>N</set_params>
     <insert_field />
     <update_field />
